@@ -1,7 +1,9 @@
 Bcquants::Application.routes.draw do
   root "pages#home"    
-  get "home", to: "pages#home", as: "home"
-  get "inside", to: "pages#inside", as: "inside"
+
+  get "home",    to: "pages#home"
+  get "inside",  to: "pages#inside"
+  get "landing", to: "pages#landing"
   
     
   devise_for :users
